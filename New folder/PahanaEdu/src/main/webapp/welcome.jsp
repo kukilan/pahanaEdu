@@ -7,6 +7,6 @@
 <title>My first jsp file</title>
 </head>
 <body>
-dashboard
+
 </body>
 </html>

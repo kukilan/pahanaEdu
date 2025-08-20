@@ -1,10 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Pahana Edu - Login</title>
-    <style>
+
         body {
             font-family: "Times New Roman", serif;
             background-color: #f4f6f8;
@@ -14,12 +8,12 @@
             min-height: 100vh;
             margin: 0;
         }
-        .login-container {
+        .register-container {
             background: white;
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 0 15px rgba(0,0,0,0.1);
-            width: 400px;
+            width: 500px;
         }
         h2 {
             text-align: center;
@@ -32,6 +26,8 @@
             margin: 10px 0 5px;
         }
         input[type="text"],
+        input[type="tel"],
+        input[type="number"],
         input[type="password"] {
             width: 100%;
             padding: 10px;
@@ -53,37 +49,16 @@
         input[type="submit"]:hover {
             background-color: #45a049;
         }
-        .signup-link {
+        .login-link {
             text-align: center;
             margin-top: 15px;
             font-size: 12pt;
         }
-        .signup-link a {
+        .login-link a {
             color: #007BFF;
             text-decoration: none;
         }
-        .signup-link a:hover {
+        .login-link a:hover {
             text-decoration: underline;
         }
-    </style>
-</head>
-<body>
-
-<div class="login-container">
-    <h2>User Login</h2>
-    <form action="LoginServlet" method="post">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" placeholder="Enter username" required>
-
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter password" required>
-
-        <input type="submit" value="Login">
-    </form>
-    <div class="signup-link">
-        New user? <a href="register.jsp">Sign up here</a>
-    </div>
-</div>
-
-</body>
-</html>
+    
